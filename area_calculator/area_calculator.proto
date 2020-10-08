@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option go_package = "grpc-go-demo/area_calculator";
+
+package area_calculator;
+
+service AreaCalculator {
+  rpc TriangleArea (TriangleParams) returns (AreaReply) {}
+  rpc RectangleArea (RectangleParams) returns (AreaReply) {}
+  rpc RhombusArea (RhombusParams) returns (AreaReply) {}
+  rpc SquareArea (SquareParams) returns (AreaReply) {}
+}
+
+message TriangleParams {
+  double base = 1;
+  double height = 2;
+}
+
+message RectangleParams {
+  double width = 1;
+  double height = 2;
+}
+
+message RhombusParams {
+  double base = 1;
+  double height = 2;
+}
+
+message SquareParams {
+  double length = 1;
+}
+
+message AreaReply {
+  double area = 1;
+}
