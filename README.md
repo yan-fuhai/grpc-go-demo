@@ -2,11 +2,11 @@
 
 Implementation of gRPC server and client. 
 
-Server provides area calculation service of triangle, rectangle, rhombus and square.
+Server provides area calculation services of triangle, rectangle, rhombus and square.
 
 ## How to run
 
-While in `grpc-go-demo` directory:
+Change directory to `grpc-go-demo`:
 
 1. Run server
 
